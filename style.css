@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+
+table {
+
+  border: 2px solid rgb(255, 65, 198, 1);
+  border-radius: 10px;
+  border-collapse: separate;
+
+}
+
+
+
+.stats-section{
+  border: 2px solid rgb(255, 65, 198, 1);
+  border-radius: 10px;
+  border-collapse: separate;
+
+  width:200px;
+  height:100px;
+ 
+}
+
+.stats-format{
+  padding: 0em;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: white;
+}
+
+#stats-header{
+  padding: 0em;
+  font-size: 2em;
+  font-weight: 600;
+  color:rgb(6, 255, 255);
+
+}
+
+a {
+  font-family: 'Merriweather Sans', sans-serif;
+  text-decoration: none;
+  color: rgb(255, 65, 198, 1);
+}
+
+#link-wallet {
+  color: rgb(6, 255, 255);
+  ;
+}
+
+#link-wallet:hover {
+  color: white;
+}
+
+a:hover {
+
+  text-decoration: underline;
+
+}
+
+tr {
+  align-content: center;
+  align-items: center;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(255, 65, 198, 0.5)
+}
+
+#currentpage {
+  color: rgb(255, 65, 198, 1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.img {
+  background: url(img/uplift-world-community-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+#img-shadow {
+  box-shadow: 0em 0em 0.3em 0.5em rgb(255, 65, 198, 1);
+}
+
+#p-description {
+  background-color: rgb(6, 255, 255, 0.1);
+  border-radius: 5px;
+
+}
+
+body {
+
+  font-size: 62.5%;
+
+  background-color: rgb(33, 0, 81, 0.9);
+  text-align: center;
+  height: 100vh;
+
+}
+
+canvas {
+  margin: 0 auto;
+}
+
+.main-container {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 94%;
+  background-color: rgb(33, 0, 81, 0.8);
+  transform: translateX(3%);
+  position: absolute;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+.header {
+  text-align: center;
+  margin: auto;
+  align-content: center;
+  padding: 0em;
+  font-weight: 600;
+  color: white;
+}
+
+#header-landRewards {
+  line-height: 0%;
+}
+
+.footer {
+  text-align: right;
+  margin: auto;
+  align-content: center;
+  padding: 0em;
+  font-size: 1em;
+
+  font-weight: 600;
+  color: white;
+}
+
+.raffle {
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+.raffle-prizes {
+  padding-top: .4em;
+  padding-bottom: .4em;
+
+}
+
+.raffle-img {
+
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+}
+
+.more-info {
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+  align-content: center;
+  font-family: sans-serif;
+  padding: 0em;
+  font-weight: 600;
+  font-size: 1.4em;
+  color: white;
+}
+
+.nav-img {
+  width: 50px;
+}
+
+.navbar-custom {
+  background-color: rgb(33, 0, 81, 0.9);
+  padding: 2px;
+  margin: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+}
+
+
+.navbar-nav {
+  font-size: 1.5em;
+}
+
+#collapse {
+  position: absolute;
+  z-index: 1;
+}
+
+#main-header {
+  padding: 0em;
+  font-size: 3em;
+  margin: 0em;
+  letter-spacing: 2px;
+
+}
+
+
+#sub-header {
+  padding: 0em;
+  font-size: 1.8em;
+  margin: auto;
+}
+
+#sub-header2 {
+  padding: 0.2em;
+  font-size: 1.2em;
+  margin: auto;
+}
+
+
+#reward-type {
+  padding: 0.2em;
+  font-size: 0.6em;
+  margin: auto;
+}
+
+
+
+#brand-tag {
+  font-size: 0.6em;
+  color: rgb(255, 65, 198, 1);
+  padding: 0.3em;
+  border-right: 2px solid rgb(255, 65, 198, 1);
+}
+
+#discord-name {
+  padding: 0em;
+  font-size: 1.8em;
+  margin: auto;
+  color: rgb(6, 255, 255);
+}
+
+
+#liftium-price {
+  text-align: center;
+  margin: 0 auto;
+  align-content: top;
+  font-size: 1.8em;
+  color: rgb(255, 65, 198, 1);
+  padding: 0em;
+}
+
+.price-section {
+  border-top: 1.5mm ridge rgb(6, 255, 255);
+  border-bottom: 1.5mm ridge rgb(6, 255, 255);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: rgb(33, 0, 81);
+}
+
+.miner-section {
+  width: 80%;
+  margin: auto;
+  padding: 0em;
+  font-weight: 600;
+  font-size: 1.4em;
+  color: white;
+}
+
+.outputLeaderBoard {
+  min-width: 40%;
+  max-width: 90%;
+
+  margin: auto;
+
+  padding: 0em;
+  font-weight: 600;
+  font-size: 1.4em;
+  color: white;
+  align-content: center;
+
+}
+
+
+
+
+.outputPayDate {
+  color: rgb(6, 255, 255);
+  margin: auto;
+  text-align: center;
+  align-content: center;
+}
