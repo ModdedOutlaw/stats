@@ -54,8 +54,8 @@ async function getStats(){
 
     });
 
-    console.log(liftiumArray);
-    console.log(liftiumArray[0][0] + ' ' + liftiumArray[0][1]);
+    //console.log(liftiumArray);
+    //console.log(liftiumArray[0][0] + ' ' + liftiumArray[0][1]);
 
     const liftiumHolderObject = {
         account:"",
@@ -77,7 +77,7 @@ async function getStats(){
     let liftium = document.getElementById('liftium');
 
 
-    console.log(holderArray);
+    //console.log(holderArray);
 
     for(let i=0; i<20; i++){
        liftium.innerHTML += (i+1) + '. ' + holderArray[i].account + ' --- ' + holderArray[i].amount + '<br>'
@@ -104,7 +104,7 @@ async function getStats(){
 });
 
 
-console.log(mioholderArray);
+//console.log(mioholderArray);
 
  let mio = document.getElementById('mio');
 
@@ -176,7 +176,7 @@ console.log(mioholderArray);
     wallets.innerHTML= stats.wallets;
 
 
-    console.log(stats);
+    //console.log(stats);
 
 
 }
