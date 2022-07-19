@@ -1,6 +1,6 @@
 
 async function fetchMIOStatsJSON() {
-    const response = await fetch('https://wax.api.atomicassets.io/atomicassets/v1/accounts?collection_name=upliftium.hi&schema_name=upliftium&page=1&limit=100&order=desc');
+    const response = await fetch('https://wax.api.atomicassets.io/atomicassets/v1/accounts?collection_name=upliftium.hi&schema_name=upliftium&page=1&limit=50&order=desc');
 
     const stats = await response.json();
 
@@ -9,7 +9,7 @@ async function fetchMIOStatsJSON() {
 }
 
 async function fetchLiftiumStatsJSON() {
-    const response = await fetch('https://www.api.bloks.io/wax/tokens?type=topHolders&chain=wax&contract=tokenizednft&symbol=LIFTIUM&limit=500');
+    const response = await fetch('https://www.api.bloks.io/wax/tokens?type=topHolders&chain=wax&contract=tokenizednft&symbol=LIFTIUM&limit=50');
 
     const stats = await response.json();
 
