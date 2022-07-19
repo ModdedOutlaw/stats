@@ -1,6 +1,6 @@
 
 async function fetchMIOStatsJSON() {
-    const response = await fetch('');
+    const response = await fetch('https://wax.api.atomicassets.io/atomicassets/v1/accounts?collection_name=upliftium.hi&schema_name=upliftium&page=1&limit=100&order=desc');
 
     const stats = await response.json();
 
@@ -31,6 +31,14 @@ async function getStats(){
 
     statsArray = [];
     liftiumArray = [];
+    mioArray = [];
+
+    await fetchMIOStatsJSON().then(stats => {
+
+        mioArray = stats;
+
+
+    });
 
     await fetchStatsJSON().then(stats => {
 
@@ -75,6 +83,34 @@ async function getStats(){
        liftium.innerHTML += (i+1) + '. ' + holderArray[i].account + ' --- ' + holderArray[i].amount + '<br>'
     }
 
+
+
+
+   const mioholderArray = [];
+
+   let mioCount = 0;
+
+   mioArray.data.forEach((holder)=>{
+    if(holder.account != 'y3gnq.wam' &&holder.account != '1mil.lft.3'&&holder.account != 'upliftservic'){
+    const tHolder = Object.create(liftiumHolderObject);
+
+    tHolder.account = holder.account;
+    tHolder.amount = holder.assets.toLocaleString();
+
+    mioholderArray[mioCount] = tHolder;
+    mioCount++;
+    }
+
+});
+
+
+console.log(mioholderArray);
+
+ let mio = document.getElementById('mio');
+
+ for(let i=0; i<20; i++){
+    mio.innerHTML += (i+1) + '. ' + mioholderArray[i].account + ' --- ' + mioholderArray[i].amount + '<br>'
+ }
 
 
 
