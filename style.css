@@ -16,12 +16,12 @@ table {
 
 
 .stats-section{
-  border: 2px solid rgb(255, 65, 198, 1);
+  border: 1.5px solid rgb(255, 65, 198, 1);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   border-collapse: separate;
+  margin:.5em;
 
-  width:200px;
-  height:100px;
  
 }
 

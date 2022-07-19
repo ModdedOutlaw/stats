@@ -38,7 +38,7 @@
 <body>
 
 
- 
+
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom ">
         <a class="navbar-brand" href="https://moddedoutlaw.github.io/5billion/"><img class="nav-img"
                 src="img\liftium-tokenizednft.png"><span id="brand-tag">Uplift Community Project</span></a>
@@ -53,7 +53,8 @@
                     Deals</a>
 
                 <a class="nav-link active" href="https://moddedoutlaw.github.io/minerstonksz/">Minerstonksz</a>
-                <a class="nav-link active" href="https://moddedoutlaw.github.io/leaderboards/" id="currentpage">Rewards LeaderBoard</a>
+                <a class="nav-link active" href="https://moddedoutlaw.github.io/leaderboards/" id="currentpage">Rewards
+                    LeaderBoard</a>
 
                 <a class="nav-link disabled">Upliftium Statistics</a>
                 <a class="nav-link disabled">DAO Proposals</a>
@@ -68,20 +69,76 @@
             <h1>Upliftium Statistics</h1>
         </div>
 
-        <div class="d-inline-flex flex-row bd-highlight mb-3 justify-content-center flex-wrap">
-            <div class="p-2 bd-highlight stats-section align-items-center" ><span id="stats-header">Claimable</span><br><span id="claimable" class="stats-format"></span></div>
-            <div class="p-2 bd-highlight stats-section"><span id="stats-header">Crystalize</span><br><span id="crystallized"class="stats-format"></span></div>
-            <div class="p-2 bd-highlight stats-section"><span id="stats-header">Issued Supply</span><br><span id="issuedSupply"class="stats-format"></span></div>
-            <div class="p-2 bd-highlight stats-section"><span id="stats-header">Melted</span><br><span id="melted"class="stats-format"></span></div>
-            <div class="p-2 bd-highlight stats-section"><span id="stats-header">NFT Circulation</span><br><span id="nftCirculation"class="stats-format"></span></div>
-            <div class="p-2 bd-highlight stats-section"><span id="stats-header">Linked Accounts</span><br><span id="linkedAccounts"class="stats-format"></span></div>
-            <div class="p-2 bd-highlight stats-section"><span id="stats-header">Transactions</span><br><span id="transactions"class="stats-format"></span></div>
-            <div class="p-2 bd-highlight stats-section"><span id="stats-header">Circulating Balance</span><br><span id="balanceCirculation"class="stats-format"></span></div>
-            <div class="p-2 bd-highlight stats-section"><span id="stats-header">Total Circulation</span><br><span id="totalCirculation"class="stats-format"></span></div>
-            <div class="p-2 bd-highlight stats-section"><span id="stats-header">Picture Installs</span><br><span id="pictureInstalls"class="stats-format"></span></div>
-            <div class="p-2 bd-highlight stats-section"><span id="stats-header">Portal Installs</span><br><span id="portalInstalls"class="stats-format"></span></div>
-         
-          </div>
+        <div class="d-inline-flex flex-row bd-highlight mb-3 justify-content-center flex-wrap ">
+
+            <div class="d-flex flex-column bd-highlight mb-3 stats-section align-self-center">
+                <div class="d-flex justify-content-center bd-highlight " id="stats-header">Claimable</div>
+                <div class="d-flex justify-content-center bd-highlight stats-format" id="claimable"></div>
+            </div>
+
+            <div class="d-flex flex-column bd-highlight mb-3 stats-section align-self-center">
+                <div class="d-flex justify-content-center bd-highlight" id="stats-header">Crystalized</div>
+                <div class="d-flex justify-content-center bd-highlight stats-format" id="crystallized"></div>
+            </div>
+
+            <div class="d-flex flex-column bd-highlight mb-3 stats-section align-self-center">
+                <div class="d-flex justify-content-center bd-highlight" id="stats-header">Issued Supply</div>
+                <div class="d-flex justify-content-center bd-highlight stats-format" id="issuedSupply"></div>
+            </div>
+
+            <div class="d-flex flex-column bd-highlight mb-3 stats-section align-self-center">
+                <div class="d-flex justify-content-center bd-highlight" id="stats-header">Melted</div>
+                <div class="d-flex justify-content-center bd-highlight stats-format" id="melted"></div>
+            </div>
+
+            <div class="d-flex flex-column bd-highlight mb-3 stats-section align-self-center">
+                <div class="d-flex justify-content-center bd-highlight" id="stats-header">NFT Circulating</div>
+                <div class="d-flex justify-content-center bd-highlight stats-format" id="nftCirculation"></div>
+            </div>
+
+            <div class="d-flex flex-column bd-highlight mb-3 stats-section align-self-center">
+                <div class="d-flex justify-content-center bd-highlight" id="stats-header">Circulating Balance</div>
+                <div class="d-flex justify-content-center bd-highlight stats-format" id="balanceCirculation"></div>
+            </div>
+
+            <div class="d-flex flex-column bd-highlight mb-3 stats-section align-self-center">
+                <div class="d-flex justify-content-center bd-highlight" id="stats-header">Total Circulation</div>
+                <div class="d-flex justify-content-center bd-highlight stats-format" id="totalCirculation"></div>
+            </div>
+
+        
+
+        </div>
+        <div class="header" id="header-landRewards">
+            <h2>Other Statistics</h2>
+        </div>
+        <div class="d-inline-flex flex-row bd-highlight mb-3 justify-content-center flex-wrap ">
+
+            <div class="d-flex flex-column bd-highlight mb-3 stats-section align-self-center">
+                <div class="d-flex justify-content-center bd-highlight" id="stats-header">Picture Installs</div>
+                <div class="d-flex justify-content-center bd-highlight stats-format" id="pictureInstalls"></div>
+            </div>
+
+
+            <div class="d-flex flex-column bd-highlight mb-3 stats-section align-self-center">
+                <div class="d-flex justify-content-center bd-highlight" id="stats-header">Portal Installs</div>
+                <div class="d-flex justify-content-center bd-highlight stats-format" id="portalInstalls"></div>
+            </div>
+
+            
+            <div class="d-flex flex-column bd-highlight mb-3 stats-section align-self-center">
+                <div class="d-flex justify-content-center bd-highlight" id="stats-header">Transactions</div>
+                <div class="d-flex justify-content-center bd-highlight stats-format"id="transactions"></div>
+            </div>
+
+            
+            <div class="d-flex flex-column bd-highlight mb-3 stats-section align-self-center">
+                <div class="d-flex justify-content-center bd-highlight" id="stats-header">Linked Accounts</div>
+                <div class="d-flex justify-content-center bd-highlight stats-format"id="linkedAccounts"></div>
+            </div>
+
+        </div>
+
 
 
         <div class="footer">
