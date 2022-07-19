@@ -52,6 +52,7 @@ async function getStats(){
     stats.totalCirculation = statsArray.data.payload.totalCirculation.toLocaleString();
     stats.pictureInstalls = statsArray.data.payload.transactions.byType[6].numTransactions.toLocaleString();
     stats.portalInstalls = statsArray.data.payload.transactions.byType[7].numTransactions.toLocaleString();
+    stats.wallets = statsArray.data.payload.wallets.toLocaleString();
 
     let claimable = document.getElementById('claimable');
     let crystallized = document.getElementById('crystallized');
@@ -64,6 +65,7 @@ async function getStats(){
     let totalCirculation = document.getElementById('totalCirculation');
     let pictureInstalls = document.getElementById('pictureInstalls');
     let portalInstalls = document.getElementById('portalInstalls');
+    let wallets = document.getElementById('wallets');
 
 
 
@@ -80,6 +82,7 @@ async function getStats(){
     totalCirculation.innerHTML = stats.totalCirculation;
     pictureInstalls.innerHTML = stats.pictureInstalls;
     portalInstalls.innerHTML = stats.portalInstalls;
+    wallets.innerHTML= stats.wallets;
 
 
     console.log(stats);
