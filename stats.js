@@ -1,4 +1,21 @@
 
+async function fetchMIOStatsJSON() {
+    const response = await fetch('');
+
+    const stats = await response.json();
+
+    return stats;
+
+}
+
+async function fetchLiftiumStatsJSON() {
+    const response = await fetch('https://www.api.bloks.io/wax/tokens?type=topHolders&chain=wax&contract=tokenizednft&symbol=LIFTIUM&limit=500');
+
+    const stats = await response.json();
+
+    return stats;
+
+}
 
 async function fetchStatsJSON() {
     const response = await fetch('upliftium.json');
@@ -13,6 +30,7 @@ async function fetchStatsJSON() {
 async function getStats(){
 
     statsArray = [];
+    liftiumArray = [];
 
     await fetchStatsJSON().then(stats => {
 
@@ -20,8 +38,45 @@ async function getStats(){
 
 
     });
+    
+    await fetchLiftiumStatsJSON().then(stats => {
 
-    console.log(statsArray);
+        liftiumArray = stats;
+
+
+    });
+
+    console.log(liftiumArray);
+    console.log(liftiumArray[0][0] + ' ' + liftiumArray[0][1]);
+
+    const liftiumHolderObject = {
+        account:"",
+        amount:0
+    }
+
+    const holderArray = [];
+   
+    liftiumArray.forEach((holder, index)=>{
+        const tHolder = Object.create(liftiumHolderObject);
+
+        tHolder.account = holder[0];
+        tHolder.amount = Number(holder[1]).toFixed(2).toLocaleString();
+
+        holderArray[index] = tHolder;
+
+    });
+
+    let liftium = document.getElementById('liftium');
+
+
+    console.log(holderArray);
+
+    for(let i=0; i<20; i++){
+       liftium.innerHTML += (i+1) + '. ' + holderArray[i].account + ' --- ' + holderArray[i].amount + '<br>'
+    }
+
+
+
 
     
     const statsObject = {
