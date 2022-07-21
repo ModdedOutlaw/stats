@@ -81,9 +81,13 @@ async function getStats(){
 
 
     //console.log(holderArray);
-
-    for(let i=0; i<20; i++){
-       liftium.innerHTML += (i+1) + '. ' + holderArray[i].account + ' --- ' + holderArray[i].amount + '<br>'
+let rank = 0;
+    for(let i =0; i <23; i++){
+        if(holderArray[i].account != 'alcorammswap'&&holderArray[i].account!='bludacmining'&&holderArray[i].account!='alcordexmain'){
+            liftium.innerHTML += (rank+1) + '. ' + holderArray[i].account + ' --- ' + holderArray[i].amount + '<br>';
+            rank++;
+        }
+  
     }
 
 
@@ -94,7 +98,7 @@ async function getStats(){
    let mioCount = 0;
 
    mioArray.data.forEach((holder)=>{
-    if(holder.account != 'y3gnq.wam' &&holder.account != '1mil.lft.3'&&holder.account != 'upliftservic'){
+    if(holder.account != 'y3gnq.wam' &&holder.account != '1mil.lft.3'&&holder.account != 'upliftservic' &&holder.account !='wesaveuplift'){
     const tHolder = Object.create(liftiumHolderObject);
 
     tHolder.account = holder.account;
