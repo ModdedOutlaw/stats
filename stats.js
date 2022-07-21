@@ -20,6 +20,9 @@ async function fetchLiftiumStatsJSON() {
 async function fetchStatsJSON() {
     const response = await fetch('upliftium.json');
 
+    console.log( response.headers.get('last-modified'));
+
+
     const stats = await response.json();
 
     return stats;
